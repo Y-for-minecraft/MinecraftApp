@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="minecraft, chunk, Check, マイクラ, チャンク, 調べる">
+    <meta name="description" content="座標を入力するとチャンクの境界を計算する。, This page calculates chunk borders when coordinates are entered.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Minecraft Chunk Checker</title>
+    <link rel="shortcut icon" href="./img/web_icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="./css/master.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>マイクラのチャンク境界チェッカー</h1>
+      <h2>Minecraft Chunk Border Checker</h2>
+    </header>
+    <!--フォーム-->
+    <div id="contents">
+      <div class="mainForm">
+        <!--hanburgerButton-->
+        <input id="hanb" type="checkbox" checked>
+        <div class="footer-close">
+          <label for="hanb" class="footer-close-button">
+            <div class="pen"><i class="fa-solid fa-pen-to-square"></i><br>Open</div>
+            <div class="hidden"><i class="fa-solid fa-xmark"></i><br>Close</div>
+          </label>
+        </div>
+        <div class="myPointBotton">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <!--hanburgerButton-->
+        <main>
+          <div class="forScroll">
+            <h3>入力欄 <span class="eng">Input</span></h3>
+            <p>座標を入力:<br>
+              <span class="eng">Enter your coordinates:</span>
+            </p>
+            <p>x:<input type="text" name="x" placeholder="123 ※半角数字"></p>
+            <p>z:<input type="text" name="z" placeholder="123 ※半角数字"></p>
+            <div class="border"></div>
+            <p>表示チャンク数:
+              <select name="count">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="10">10</option>
+              </select>
+            </p>
+            <p class="eng">Number of chunks to display:</p>
+            <div class="border"></div>
+            <p class="float">表示切り替え:<br><span class="eng">Display switch:</span></p>
+            <p>
+              <lavel><input type="radio" name="view" value="1" checked>簡易-Simple</lavel><br>
+              <lavel><input type="radio" name="view" value="2">詳細-Details</lavel>
+            </p>
+            <div style="clear: both;" class="border"></div>
+            <p class="float">座標:<br><span class="eng">Coordinates:</span></p>
+            <p>
+              <lavel><input type="radio" name="coordinate" value="1" checked>表示-Show</lavel><br>
+              <lavel><input type="radio" name="coordinate" value="2">非表示-Hide</lavel>
+            </p>
+            <div style="clear: both;"></div>
+            <p class="OK">
+              <label><i class="fa-solid fa-hand-point-left"></i><input type="submit" name="submit" value="OK"></label>
+            </p>
+            <p class="myPoint">
+              <i class="fa-solid fa-location-dot"></i><span>My Place</span>
+            </p>
+          </div>
+        </main>
+        <!--フォーム-->
+      </div>
+    </div>
+    <aside>
+      <h3>付近のチャンクの境界と座標 <span class="eng">Chunk border & coordinates</span></h3>
+      <!--Respons-->
+      <table id="answer" class="hide">
+
+      </table>
+      <!--Respons-->
+    </aside>
+    <footer>
+      <p><small>Writen by Yusuke M</small></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script src="./js/chunk.js" charset="utf-8"></script>
+  </body>
+</html>
