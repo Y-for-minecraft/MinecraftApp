@@ -170,7 +170,7 @@ $(".enter_coordinates_menu .my_place").click(function () {
   target.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
 });
 /*avoid crashes using delete range*/
-$('input[name="view"]').blur(function () {
+$('input[name="view"]').change(function () {
   if ($('input[name="view"]:checked').val() == 2) {
     $('select[name="count"] option[value="10"]').addClass("hide");
     $('select[name="count"] option[value="6"]').addClass("hide");
