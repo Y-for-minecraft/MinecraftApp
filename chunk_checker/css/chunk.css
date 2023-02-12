@@ -316,6 +316,7 @@ aside {
 .coordinates_input p:not(.small_title) input::placeholder {
   color: #73563A;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease-in-out;
 }
 .coordinates_input select {
   display: inline;
@@ -353,6 +354,9 @@ aside {
   border-left: 2px solid #73563A;
   box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
   background: #E6BE96;
+}
+.coordinates_input p:not(.small_title) input:hover::placeholder, .coordinates_input p:not(.small_title) input:active::placeholder, .coordinates_input p:not(.small_title) input:focus::placeholder {
+  opacity: 0.2;
 }
 .coordinates_input .display_switch input:checked ~ span {
   font-weight: normal;
