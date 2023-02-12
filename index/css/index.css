@@ -97,6 +97,9 @@ main section {
   display: block;
   height: 600px;
 }
+main section:last-child {
+  height: 800px;
+}
 main .center_form {
   width: 900px;
   position: absolute;
