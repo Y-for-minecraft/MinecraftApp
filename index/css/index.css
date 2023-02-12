@@ -136,10 +136,12 @@ main .center_form a:hover .text_box {
 }
 /*footer*/
 footer {
+  position: relative;
   text-align: center;
   background: #404040;
   height: 80px;
   padding-top: 10px;
+  z-index: 50;
 }
 footer p {
   margin-bottom: 10px;
