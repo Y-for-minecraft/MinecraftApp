@@ -274,6 +274,7 @@ footer img {
     width: 100%;
     box-sizing: border-box;
     text-decoration-color: #fff;
+    display: block;
   }
   header .header_2windows nav ul li {
     padding-left: 1em;
