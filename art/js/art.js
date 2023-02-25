@@ -4907,6 +4907,7 @@ document.addEventListener('touchstart', question_obj_touch);
 // 連想配列に格納
 function getCookieArray(){
   let arr = new Array();
+  console.log(document.cookie);
   if(document.cookie != ''){
     let tmp = document.cookie.split('; ');
     for(let i=0;i<tmp.length;i++){
@@ -4946,6 +4947,7 @@ window.onload = function(){
   // keyを指定して取得
   //「 key1=val1; key2=val2; key3=val3; ・・・ 」というCookie情報が保存されているとする
   let obj = save_cookie_data();
+  console.log(obj);
   save_cookie (obj.cookievalue, obj.expires, obj.path)
   let arr = getCookieArray();
   let value = 'key1の値：' + arr['key1'];
