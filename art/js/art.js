@@ -4947,8 +4947,8 @@ window.onload = function(){
   // keyを指定して取得
   //「 key1=val1; key2=val2; key3=val3; ・・・ 」というCookie情報が保存されているとする
   let obj = save_cookie_data();
-  console.log(obj);
   document.cookie = 'name=太郎';
+  console.log(document.cookie);
   let arr = getCookieArray();
   let value = 'key1の値：' + arr['key1'];
   console.log(value);
