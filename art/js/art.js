@@ -4948,7 +4948,7 @@ window.onload = function(){
   //「 key1=val1; key2=val2; key3=val3; ・・・ 」というCookie情報が保存されているとする
   let obj = save_cookie_data();
   console.log(obj);
-  save_cookie (obj.cookievalue, obj.expires, obj.path)
+  document.cookie = 'name=太郎';
   let arr = getCookieArray();
   let value = 'key1の値：' + arr['key1'];
   console.log(value);
