@@ -4903,11 +4903,11 @@ document.addEventListener('mousemove', question_obj_mouse);
 document.addEventListener('touchstart', question_obj_touch);
 /*++cookie++*/
 /*https://qiita.com/mocha_xx/items/e0897e9f251da042af59*/
+/*https://www.sejuku.net/blog/28696*/
 /*++Cookieをkeyで取得する++*/
 // 連想配列に格納
 function getCookieArray(){
   let arr = new Array();
-  console.log(document.cookie);
   if(document.cookie != ''){
     let tmp = document.cookie.split('; ');
     for(let i=0;i<tmp.length;i++){
