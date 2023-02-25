@@ -1236,7 +1236,7 @@ function makeCanvas(rowL, colL, table) {
       }
       let img = new Image();
       // WARNING: if can display img do -> crossorigin="anonymous ->html #Blueprint_with_skins_button toggle hidden
-      //img.crossOrigin = "anonymous";
+      img.crossOrigin = "anonymous";
       img.onload = function () {
         bpctx.drawImage(img, x * 20, y * 20, 20, 20);
         bpctx.strokeRect(x * 20, y * 20, 20, 20);
@@ -1605,8 +1605,8 @@ function return_array_doinput(alt_arr, src_arr, str) {
         src = src_arr[index];
       }
       // WARNING: if can display img do -> crossorigin="anonymous
-      //html = html + '<img class="' + cl + '" src="' + src + '" alt="' + alt + '" style="background: ' + rgb + ';" crossorigin="anonymous">';
-      html = html + '<img class="' + cl + '" src="' + src + '" alt="' + alt + '" style="background: ' + rgb + ';">';
+      html = html + '<img class="' + cl + '" src="' + src + '" alt="' + alt + '" style="background: ' + rgb + ';" crossorigin="anonymous">';
+      //html = html + '<img class="' + cl + '" src="' + src + '" alt="' + alt + '" style="background: ' + rgb + ';">';
     }
     html = html + "</div></label>";
     let parent_class = str[i].split("_intoClass_").slice(1, 2);
